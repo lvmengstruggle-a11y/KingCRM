@@ -22,7 +22,7 @@ describe('http', () => {
     assert.deepEqual(response.json(), { status: 'ok' });
   });
 
-  it('GET /get-key returns the Java-compatible result envelope', async () => {
+  it('GET /get-key returns the result envelope', async () => {
     const app = await appPromise;
     const response = await app.inject({ method: 'GET', url: '/get-key' });
     assert.equal(response.statusCode, 200);

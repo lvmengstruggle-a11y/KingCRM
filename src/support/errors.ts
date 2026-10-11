@@ -1,7 +1,7 @@
 import { ResultCode } from './result.js';
 
 /**
- * 业务异常。httpStatus 对齐 Java 异常处理器：
+ * 业务异常。httpStatus：
  * 未登录 401 / 无权限 403 / 校验 400 / 未分类业务错误 500。
  */
 export class AppError extends Error {

@@ -1,4 +1,4 @@
-/** field.json 的 internalKey 对应主表字段，和 Java BusinessModuleField 一致。 */
+/** field.json 的 internalKey 对应主表字段。 */
 export const BUSINESS_FIELDS: Record<string, { businessKey: string; disabledProps: string[] }> = {
   customerName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
   customerOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },

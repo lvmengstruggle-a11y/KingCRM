@@ -3,8 +3,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 
 /**
- * 登录公钥与 Java RsaUtils 对齐：
- * 1024 位 RSA，公钥为 X.509 SPKI 的 Base64，供前端 JSEncrypt 使用。
+ * 登录公钥：1024 位 RSA，公钥为 X.509 SPKI 的 Base64，供前端 JSEncrypt 使用。
  * 前端加密填充是 PKCS#1 v1.5，解密必须用同一填充。
  */
 class RsaKeyStore {

@@ -10,8 +10,8 @@ interface SessionRecord {
 }
 
 /**
- * 进程内会话。前端用 X-AUTH-TOKEN + CSRF-TOKEN 识别登录态，
- * 不依赖 Java Shiro 的 Cookie。多实例部署时再换成 Redis。
+ * 进程内会话。前端用 X-AUTH-TOKEN + CSRF-TOKEN 识别登录态。
+ * 多实例部署时再换成 Redis。
  */
 class MemorySessionStore {
   private readonly sessions = new Map<string, SessionRecord>();

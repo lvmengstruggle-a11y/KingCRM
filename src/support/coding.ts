@@ -1,7 +1,7 @@
 import { createHash, timingSafeEqual } from 'node:crypto';
 
 /**
- * 与 Java CodingUtils.md5 一致：UTF-8 字节的小写十六进制 MD5。
+ * 密码摘要：UTF-8 字节的小写十六进制 MD5。
  * 现有库中的密码就是这个摘要，登录校验必须保持同一算法。
  */
 export function md5(src: string): string {

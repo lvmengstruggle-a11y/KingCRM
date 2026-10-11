@@ -74,7 +74,7 @@ export const Permission = {
   AGENT_DELETE: 'AGENT:DELETE',
 } as const;
 
-/** 与 Java role.* 文案一致，内置角色在列表里显示中文名。 */
+/** 内置角色在列表里显示中文名。 */
 export const INTERNAL_ROLE_NAMES: Record<string, string> = {
   org_admin: '管理员',
   sales_manager: '销售经理',

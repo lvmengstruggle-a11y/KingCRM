@@ -44,7 +44,7 @@ function addDays(year: number, month: number, day: number, days: number): { year
   return { year: shifted.getUTCFullYear(), month: shifted.getUTCMonth(), day: shifted.getUTCDate() };
 }
 
-/** 与 Java HomeStatisticSearchWrapperRequest 一致：周一为一周起点，时区按东八区。 */
+/** 周一为一周起点，时区按东八区。 */
 function periodRange(period: Period, previous: boolean, now = Date.now()): { start: number; end: number } {
   const current = shanghaiParts(now);
   if (period === 'TODAY') {

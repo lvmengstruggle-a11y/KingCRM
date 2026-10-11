@@ -1,5 +1,5 @@
 /**
- * 与 Java ResultHolder 对齐的响应信封。
+ * 统一响应信封。
  * 成功时 HTTP 200，业务码 100200；前端拦截器只取 data。
  */
 export const ResultCode = {
