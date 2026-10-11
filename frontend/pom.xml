@@ -5,8 +5,8 @@
     <packaging>pom</packaging>
 
     <parent>
-        <groupId>cn.cordys</groupId>
-        <artifactId>cordys-crm</artifactId>
+        <groupId>cn.kingcrm</groupId>
+        <artifactId>kingcrm</artifactId>
         <version>${revision}</version>
     </parent>
 

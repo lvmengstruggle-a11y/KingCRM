@@ -1,4 +1,4 @@
-import type { FilterForm, FilterResult } from '@cordys/web/src/components/pure/crm-advance-filter/type';
+import type { FilterForm, FilterResult } from '@kingcrm/web/src/components/pure/crm-advance-filter/type';
 
 export interface ViewParams extends FilterResult {
   id?: string;

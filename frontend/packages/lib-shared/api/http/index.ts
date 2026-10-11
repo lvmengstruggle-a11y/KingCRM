@@ -1,5 +1,5 @@
 import { getLocalStorage } from '../../method/local-storage';
-import { CordysAxios } from './Axios';
+import { KingAxios } from './Axios';
 import type { AxiosTransform, CreateAxiosOptions } from './axiosTransform';
 import { joinTimestamp } from './helper';
 import { ContentTypeEnum, RequestEnum } from '@lib/shared/enums/httpEnum';
@@ -149,7 +149,7 @@ export default function createAxios(opt: Partial<CreateAxiosOptions>) {
     },
   };
 
-  return new CordysAxios(
+  return new KingAxios(
     deepMerge(
       {
         // See https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication#authentication_schemes

@@ -1,4 +1,4 @@
--- 工单模块。在 cordys-crm 手工执行。不改已有业务表，只新增工单表并给默认组织登记模块开关。
+-- 工单模块。在 kingcrm 手工执行。不改已有业务表，只新增工单表并给默认组织登记模块开关。
 
 CREATE TABLE IF NOT EXISTS `ticket` (
   `id` varchar(32) NOT NULL,

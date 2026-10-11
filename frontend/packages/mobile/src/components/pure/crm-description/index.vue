@@ -78,7 +78,7 @@
   import CrmTag from '@/components/pure/crm-tag/index.vue';
   import CrmFileListPop from '@/components/business/crm-file-list-pop/index.vue';
 
-  import { AttachmentInfo, type FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+  import { AttachmentInfo, type FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
   export interface CrmDescriptionItem {
     label: string;

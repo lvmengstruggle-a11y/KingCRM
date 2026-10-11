@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import type { FormDesignConfigDetailParams } from '@lib/shared/models/system/module';
 import type { TableQueryParams } from '@lib/shared/models/common';
 import { ValidateInfo } from '@lib/shared/models/system/org';
@@ -181,7 +181,7 @@ import {
   UpdateStageBaseParams,
 } from '@lib/shared/models/opportunity';
 import type { CirculationTypeEnum } from '@lib/shared/enums/opportunityEnum';
-export default function useContractApi(CDR: CordysAxios) {
+export default function useContractApi(CDR: KingAxios) {
   // 合同列表
   function getContractList(data: StageBoardPageQueryParams) {
     return CDR.post<CommonList<ContractItem>>({ url: ContractPageUrl, data }, { ignoreCancelToken: true });

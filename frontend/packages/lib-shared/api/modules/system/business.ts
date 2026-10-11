@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   AddApiKeyUrl,
   AddAiModelUrl,
@@ -123,7 +123,7 @@ import type {
   TermParams,
 } from '@lib/shared/models/system/term';
 
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   // 获取邮件设置
   function getConfigEmail() {
     return CDR.get<ConfigEmailParams>({ url: GetConfigEmailUrl });

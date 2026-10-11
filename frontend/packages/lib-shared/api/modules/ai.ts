@@ -27,7 +27,7 @@ import {
 } from '../requrls/ai';
 import { useI18n } from '../../hooks/useI18n';
 import { getToken } from '../../method/auth';
-import type { CordysAxios } from '../http/Axios';
+import type { KingAxios } from '../http/Axios';
 import type { CommonList, TableQueryParams } from '../../models/common';
 import type {
   AgentChatCancelParams,
@@ -292,7 +292,7 @@ async function* readAgentStream(
   }
 }
 
-export default function useAiApi(CDR: CordysAxios) {
+export default function useAiApi(CDR: KingAxios) {
   async function* streamAgentChat(
     params: AgentChatStreamParams,
     options: AgentChatStreamOptions = {}

@@ -1,6 +1,6 @@
 # KingCRM
 
-独立的 TypeScript / Node.js CRM。Java 版在同级目录 `CordysCRMjava`。产品介绍和界面截图见 [项目介绍.md](./项目介绍.md)，协议和数据库说明见 [PLAN.md](./PLAN.md)。
+独立的 TypeScript / Node.js CRM。Java 版在同级目录。产品介绍和界面截图见 [项目介绍.md](./项目介绍.md)，协议和数据库说明见 [PLAN.md](./PLAN.md)。
 
 ```bash
 cp .env.example .env

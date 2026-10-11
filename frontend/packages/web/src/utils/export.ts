@@ -5,7 +5,7 @@ import { ExportTableColumnItem } from '@lib/shared/models/common';
 import { FilterFormItem } from '@/components/pure/crm-advance-filter/type';
 import { CrmDataTableColumn } from '@/components/pure/crm-table/type';
 
-import type { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+import type { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
 export function getColumnType(item: any, customFieldsFilterConfig?: FilterFormItem[], supportShowFields?: boolean) {
   if (customFieldsFilterConfig?.some((i) => i.dataIndex === item.key)) {

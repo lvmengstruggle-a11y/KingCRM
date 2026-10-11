@@ -1,5 +1,5 @@
-import type { CrmTreeNodeData } from '@cordys/web/src/components/pure/crm-tree/type';
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { CrmTreeNodeData } from '@kingcrm/web/src/components/pure/crm-tree/type';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   addDepartmentUrl,
   addUserUrl,
@@ -47,7 +47,7 @@ import type {
 } from '@lib/shared/models/system/org';
 import type { DeptUserTreeNode } from '@lib/shared/models/system/role';
 
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   // 组织架构-部门树查询
   function getDepartmentTree() {
     return CDR.get<CrmTreeNodeData[]>({ url: getDepartmentTreeUrl });

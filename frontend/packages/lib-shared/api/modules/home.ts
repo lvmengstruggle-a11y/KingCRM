@@ -1,7 +1,7 @@
 import type { FollowOptStatisticDetail, GetHomeStatisticParams, HomeLeadStatisticDetail, HomeWinOrderDetail } from '../../models/home';
 import { HomeDepartmentTree, HomeFollowOpportunity, HomeLeadStatistic, HomeOpportunityBoardUrl, HomeSuccessOpportunity, HomeOpportunityUnderwayUrl } from '../requrls/home';
-import { CrmTreeNodeData } from '@cordys/web/src/components/pure/crm-tree/type';
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import { CrmTreeNodeData } from '@kingcrm/web/src/components/pure/crm-tree/type';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 
 interface BoardPoint {
   name: string;
@@ -21,7 +21,7 @@ interface OpportunityBoard {
   trendAmount: BoardPoint[];
 }
 
-export default function useHomeApi(CDR: CordysAxios) {
+export default function useHomeApi(CDR: KingAxios) {
   // 用户部门权限树
   function getHomeDepartmentTree() {
     return CDR.get<CrmTreeNodeData[]>({ url: HomeDepartmentTree });

@@ -21,9 +21,9 @@ export const config = {
     port: readNumber('MYSQL_PORT', 3306),
     user: process.env.MYSQL_USER || 'root',
     password: process.env.MYSQL_PASSWORD || '',
-    database: process.env.MYSQL_DATABASE || 'cordys-crm',
+    database: process.env.MYSQL_DATABASE || 'kingcrm',
   },
 };
 
 export const ADMIN_USER_ID = 'admin';
-export const DEFAULT_ADMIN_PASSWORD = 'CordysCRM';
+export const DEFAULT_ADMIN_PASSWORD = 'KingCRM';

@@ -6,12 +6,12 @@ import { getLocalStorage } from '@lib/shared/method/local-storage';
 
 import { isObject } from './is';
 import { createAuthenticatedSSE, type SseConnection } from './sse';
-import { CHINA_PCD, COUNTRIES_TREE } from '@cordys/web/src/components/business/crm-city-select/config';
+import { CHINA_PCD, COUNTRIES_TREE } from '@kingcrm/web/src/components/business/crm-city-select/config';
 import type {
   FormCreateField,
   FormCreateFieldDateType,
-} from '@cordys/web/src/components/business/crm-form-create/types';
-import industryOptions from '@cordys/web/src/components/pure/crm-industry-select/config';
+} from '@kingcrm/web/src/components/business/crm-form-create/types';
+import industryOptions from '@kingcrm/web/src/components/pure/crm-industry-select/config';
 
 /**
  * 递归深度合并

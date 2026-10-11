@@ -36,10 +36,10 @@ import {
   unCollectAgentUrl,
   updateAgentUrl,
 } from '../requrls/agent';
-import type { CrmTreeNodeData } from '@cordys/web/src/components/pure/crm-tree/type';
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { CrmTreeNodeData } from '@kingcrm/web/src/components/pure/crm-tree/type';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 
-export default function useAgentApi(CDR: CordysAxios) {
+export default function useAgentApi(CDR: KingAxios) {
   // 智能体模块重命名
   function agentModuleRename(data: AgentModuleRenameParams) {
     return CDR.post({ url: agentModuleRenameUrl, data });

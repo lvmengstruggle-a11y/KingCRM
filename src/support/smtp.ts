@@ -108,12 +108,12 @@ async function runSmtp(
   socket.setTimeout(10000);
   await once(socket, 'connect');
   await expectCode(socket, 220);
-  await command(socket, 'EHLO cordys', 250);
+  await command(socket, 'EHLO kingcrm', 250);
   if (!implicitTls && input.tsl === 'true') {
     await command(socket, 'STARTTLS', 220);
     socket = tls.connect({ socket, servername: input.host });
     await once(socket, 'secureConnect');
-    await command(socket, 'EHLO cordys', 250);
+    await command(socket, 'EHLO kingcrm', 250);
   }
   if (input.account) {
     await command(socket, 'AUTH LOGIN', 334);
@@ -133,9 +133,9 @@ async function runSmtp(
     const body = [
       `From: ${from}`,
       `To: ${input.recipient.trim()}`,
-      'Subject: Cordys CRM test',
+      'Subject: KingCRM test',
       '',
-      'Cordys CRM SMTP connection test',
+      'KingCRM SMTP connection test',
       '.',
     ].join('\r\n');
     await command(socket, body, 250);

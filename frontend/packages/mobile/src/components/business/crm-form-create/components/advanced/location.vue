@@ -41,8 +41,8 @@
   import { useI18n } from '@lib/shared/hooks/useI18n';
   import { getCityPath } from '@lib/shared/method';
 
-  import { getCountriesByLevel } from '@cordys/web/src/components/business/crm-city-select/config';
-  import { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+  import { getCountriesByLevel } from '@kingcrm/web/src/components/business/crm-city-select/config';
+  import { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
   import type { CascaderOption } from 'vant';
 
   const props = defineProps<{

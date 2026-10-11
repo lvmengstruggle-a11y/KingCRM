@@ -1,6 +1,6 @@
 import type { CommonList, ModuleField } from '../models/common';
 import { FieldTypeEnum } from '../enums/formDesignEnum';
-import type { FormCreateField, FormDetail } from '@cordys/web/src/components/business/crm-form-create/types';
+import type { FormCreateField, FormDetail } from '@kingcrm/web/src/components/business/crm-form-create/types';
 import { formatTimeValue, getCityPath, getIndustryPath } from './index';
 import { useI18n } from '../hooks/useI18n';
 

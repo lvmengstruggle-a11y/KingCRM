@@ -87,7 +87,7 @@
           <template #versionInfoSlot>
             <n-popover position="left" content-class="w-[320px]" class="!p-[16px]">
               <div class="flex flex-col gap-[8px]">
-                <CrmSvg name="logo_CORDYS" height="22px" width="100px" />
+                <CrmSvg name="logo_kingcrm" height="22px" width="100px" />
                 <div
                   class="flex cursor-pointer items-center gap-[8px] text-[14px] text-[var(--color-text-1)]"
                   @click="copyVersion(appStore.versionInfo.currentVersion)"

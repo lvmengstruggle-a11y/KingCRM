@@ -1,4 +1,4 @@
-import { AttachmentInfo } from '@cordys/web/src/components/business/crm-form-create/types';
+import { AttachmentInfo } from '@kingcrm/web/src/components/business/crm-form-create/types';
 import { ContractBusinessTitleStatusEnum } from '@lib/shared/enums/contractEnum';
 import type { ModuleField, TableQueryParams } from './common';
 import type { FormDesignConfigDetailParams } from './system/module';

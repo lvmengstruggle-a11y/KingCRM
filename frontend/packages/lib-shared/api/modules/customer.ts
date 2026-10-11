@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   AddAccountPoolViewUrl,
   AddContactViewUrl,
@@ -196,7 +196,7 @@ import type { CluePoolItem, FormDesignConfigDetailParams, OpportunityItem } from
 import { ValidateInfo } from '@lib/shared/models/system/org';
 import type { ViewItem, ViewParams } from '@lib/shared/models/view';
 import type { ContractItem, PaymentPlanItem, PaymentRecordItem } from '@lib/shared/models/contract';
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   // 添加客户
   function addCustomer(data: SaveCustomerParams) {
     return CDR.post({ url: AddCustomerUrl, data });

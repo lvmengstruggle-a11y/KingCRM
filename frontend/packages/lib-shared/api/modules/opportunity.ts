@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   AddBusinessViewUrl,
   AddOpportunityStageUrl,
@@ -126,7 +126,7 @@ import { ValidateInfo } from '@lib/shared/models/system/org';
 import type { ViewItem, ViewParams } from '@lib/shared/models/view';
 import type { CirculationTypeEnum } from '@lib/shared/enums/opportunityEnum';
 
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   // 商机列表
   function getOpportunityList(data: StageBoardPageQueryParams) {
     return CDR.post<CommonList<OpportunityItem>>({ url: OptPageUrl, data }, { ignoreCancelToken: true });

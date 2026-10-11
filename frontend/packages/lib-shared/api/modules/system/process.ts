@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   ApprovalPermissionsUrl,
   AddApprovalProcessUrl,
@@ -50,7 +50,7 @@ import type { CommonList } from '@lib/shared/models/common';
 import type { OptionDTO } from '@lib/shared/models/system/business';
 import type { TableQueryParams } from '@lib/shared/models/common';
 
-export default function useProcessApi(CDR: CordysAxios) {
+export default function useProcessApi(CDR: KingAxios) {
   // 审批流数据权限
   function getApprovalPermissions(type: string) {
     return CDR.get<ApprovalPermissionsDetail>({ url: `${ApprovalPermissionsUrl}/${type}` });

@@ -1,5 +1,5 @@
 import { NO_RESOURCE_ROUTE_NAME, WHITE_LIST } from '../constants';
-import usePermission from '@cordys/web/src/hooks/usePermission';
+import usePermission from '@kingcrm/web/src/hooks/usePermission';
 import NProgress from 'nprogress';
 import type { Router } from 'vue-router';
 

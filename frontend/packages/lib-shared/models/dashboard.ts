@@ -1,6 +1,6 @@
 import type { TableQueryParams } from './common';
 import type { SelectedUsersItem } from './system/module';
-import type { CrmTreeNodeData } from '@cordys/web/src/components/pure/crm-tree/type';
+import type { CrmTreeNodeData } from '@kingcrm/web/src/components/pure/crm-tree/type';
 
 export interface DashboardModuleRenameParams {
   id: string;

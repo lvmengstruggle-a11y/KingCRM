@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   AddFollowPlanCommentUrl,
   AddFollowRecordCommentUrl,
@@ -55,7 +55,7 @@ import type {
 } from '@lib/shared/models/follow';
 import type { ViewItem, ViewParams } from '@lib/shared/models/view';
 
-export default function useFollowApi(CDR: CordysAxios) {
+export default function useFollowApi(CDR: KingAxios) {
   // 跟进记录列表
   function getFollowRecordPage(data: CustomerFollowRecordTableParams) {
     return CDR.post<CommonList<FollowDetailItem>>({ url: GetFollowRecordPageUrl, data });

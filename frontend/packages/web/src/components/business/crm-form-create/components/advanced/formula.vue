@@ -17,7 +17,7 @@
 
   import CrmFormula from '@/components/business/crm-formula/index.vue';
 
-  import type { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+  import type { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
   const props = defineProps<{
     fieldConfig: FormCreateField;

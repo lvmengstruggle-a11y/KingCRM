@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const propertiesPath = join(
   dirname(fileURLToPath(import.meta.url)),
-  '../../resources/i18n/cordys-crm_zh_CN.properties',
+  '../../resources/i18n/kingcrm_zh_CN.properties',
 );
 
 const messages = loadMessages(propertiesPath);

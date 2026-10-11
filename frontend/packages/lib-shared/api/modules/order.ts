@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   AddOrderUrl,
   AddOrderViewUrl,
@@ -62,7 +62,7 @@ import {
 } from '@lib/shared/models/opportunity';
 import type { CirculationTypeEnum } from '@lib/shared/enums/opportunityEnum';
 
-export default function useOrderApi(CDR: CordysAxios) {
+export default function useOrderApi(CDR: KingAxios) {
   // 列表
   function getOrderList(data: StageBoardPageQueryParams) {
     return CDR.post<CommonList<OrderItem>>({ url: OrderPageUrl, data }, { ignoreCancelToken: true });

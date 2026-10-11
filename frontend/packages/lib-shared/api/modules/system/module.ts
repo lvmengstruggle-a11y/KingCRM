@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   AddClueCapacityUrl,
   AddCluePoolUrl,
@@ -124,7 +124,7 @@ import type {
 import type { OrderItem } from '@lib/shared/models/order';
 import { CustomFormPageItem, type CustomFormDetail } from '@lib/shared/models/customForm';
 
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   // 模块首页-导航模块列表
   function getModuleNavConfigList(data: { organizationId: string }) {
     return CDR.post<ModuleNavBaseInfoItem[]>({ url: getModuleNavConfigListUrl, data }, { noErrorTip: true });

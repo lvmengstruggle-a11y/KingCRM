@@ -29,8 +29,8 @@ import {
   getFormConfigApiMap,
   getFormDetailApiMap,
   updateFormApi,
-} from '@cordys/web/src/components/business/crm-form-create/config';
-import type { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+} from '@kingcrm/web/src/components/business/crm-form-create/config';
+import type { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
 export interface FormCreateApiProps {
   sourceId?: Ref<string | undefined>;

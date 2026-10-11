@@ -37,7 +37,7 @@
 
   import { downloadAttachment } from '@/api/modules';
 
-  import { AttachmentInfo } from '@cordys/web/src/components/business/crm-form-create/types';
+  import { AttachmentInfo } from '@kingcrm/web/src/components/business/crm-form-create/types';
   import useUserStore from '@/store/modules/user';
 
   const props = defineProps<{

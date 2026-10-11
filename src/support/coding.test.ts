@@ -6,7 +6,7 @@ import { md5, md5Equals } from './coding.js';
 describe('md5', () => {
   it('matches the UTF-8 hex digest used by the Java backend', () => {
     assert.equal(md5('admin'), '21232f297a57a5a743894a0e4a801fc3');
-    assert.match(md5('CordysCRM'), /^[0-9a-f]{32}$/);
+    assert.match(md5('KingCRM'), /^[0-9a-f]{32}$/);
   });
 
   it('compares a stored digest in constant time when lengths match', () => {

@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   BatchRemoveRoleMemberUrl,
   CreateRoleUrl,
@@ -29,7 +29,7 @@ import type {
   RoleUpdateParams,
 } from '@lib/shared/models/system/role';
 
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   // 角色关联用户
   function relateRoleMember(data: RelateRoleMemberParams) {
     return CDR.post({ url: RelateRoleUrl, data });

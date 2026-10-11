@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   AddAnnouncementUrl,
   BatchSaveMessageTaskUrl,
@@ -29,7 +29,7 @@ import type {
   SaveMessageConfigParams,
 } from '@lib/shared/models/system/message';
 
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   // 公告
   // 添加公告
   function addAnnouncement(data: AnnouncementSaveParams) {

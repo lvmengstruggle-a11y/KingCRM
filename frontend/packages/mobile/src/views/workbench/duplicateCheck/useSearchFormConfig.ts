@@ -20,7 +20,7 @@ import {
 import { hasAnyPermission } from '@/utils/permission';
 
 import { defaultSearchSetFormModel, lastScopedOptions, ScopedOptions, scopedOptions, SearchTableKey } from './config';
-import { getFormConfigApiMap } from '@cordys/web/src/components/business/crm-form-create/config';
+import { getFormConfigApiMap } from '@kingcrm/web/src/components/business/crm-form-create/config';
 
 export const getSearchListApiMap: Record<SearchTableKey, (data: any) => Promise<CommonList<any>>> = {
   [FormDesignKeyEnum.SEARCH_ADVANCED_CLUE]: getGlobalSearchClueList,

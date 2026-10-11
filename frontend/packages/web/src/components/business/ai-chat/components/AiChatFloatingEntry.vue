@@ -10,7 +10,7 @@
 
   <CrmDrawer
     v-model:show="showChatDrawer"
-    title="CORDYS AI"
+    title="KingCRM AI"
     :width="1200"
     :footer="false"
     no-padding

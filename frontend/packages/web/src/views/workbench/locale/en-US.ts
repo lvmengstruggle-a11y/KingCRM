@@ -23,7 +23,7 @@ export default {
   'workbench.duplicateCheck.searchConditions': 'Search conditions',
   'workbench.duplicateCheck.advanced': 'Advanced',
   'workbench.duplicateCheck.searchConfig': 'Search config',
-  'workbench.duplicateCheck.searchInAdvancedResult': 'Search in cordys of {name} result',
+  'workbench.duplicateCheck.searchInAdvancedResult': 'Search in kingcrm of {name} result',
   'workbench.duplicateCheck.maxConditionTooltip': 'Allows you to add a maximum of 5 conditions',
   'workbench.duplicateCheck.searchModule': 'Search module',
   'workbench.duplicateCheck.matchFields': 'Match fields',

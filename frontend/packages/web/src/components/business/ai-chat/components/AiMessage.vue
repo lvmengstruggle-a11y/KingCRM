@@ -384,7 +384,7 @@
 
   const roleText = computed(() => {
     if (props.message.role === 'assistant') {
-      return 'CORDYS AI';
+      return 'KingCRM AI';
     }
 
     return '';

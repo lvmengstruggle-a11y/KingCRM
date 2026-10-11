@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   AddClueFollowPlanUrl,
   AddClueFollowRecordUrl,
@@ -124,7 +124,7 @@ import type { CluePoolItem, FormDesignConfigDetailParams } from '@lib/shared/mod
 import { ValidateInfo } from '@lib/shared/models/system/org';
 import type { ViewItem, ViewParams } from '@lib/shared/models/view';
 
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   // 添加线索
   function addClue(data: SaveClueParams) {
     return CDR.post({ url: AddClueUrl, data });

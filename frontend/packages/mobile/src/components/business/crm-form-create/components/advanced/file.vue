@@ -43,7 +43,7 @@
 
   import { uploadTempAttachment } from '@/api/modules';
 
-  import { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+  import { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
   const props = defineProps<{
     fieldConfig: FormCreateField;

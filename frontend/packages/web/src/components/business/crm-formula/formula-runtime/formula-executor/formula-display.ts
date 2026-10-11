@@ -2,7 +2,7 @@ import { tokenizeFromSource } from '@/components/business/crm-formula-editor/par
 import { safeParseFormula } from '@/components/business/crm-formula-editor/utils';
 
 import { flatAllFields } from '../../utils';
-import type { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+import type { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
 export interface FormulaDisplayInfo {
   allFieldIds: string[];

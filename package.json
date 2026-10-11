@@ -1,8 +1,8 @@
 {
-  "name": "@cordys/backend-node",
+  "name": "@kingcrm/backend-node",
   "version": "0.1.0",
   "private": true,
-  "description": "Cordys CRM backend rewritten with Node.js and TypeScript",
+  "description": "KingCRM backend rewritten with Node.js and TypeScript",
   "type": "module",
   "engines": {
     "node": ">=20"

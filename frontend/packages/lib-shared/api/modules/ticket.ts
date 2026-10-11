@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 
 import {
   AccountTicketPageUrl,
@@ -37,7 +37,7 @@ import {
   TicketUrgeUrl,
 } from '../requrls/ticket';
 
-export default function useTicketApi(CDR: CordysAxios) {
+export default function useTicketApi(CDR: KingAxios) {
   return {
     pageTicket: (data: Record<string, unknown>) => CDR.post({ url: TicketPageUrl, data }),
     pageAccountTicket: (data: Record<string, unknown>) => CDR.post({ url: AccountTicketPageUrl, data }),

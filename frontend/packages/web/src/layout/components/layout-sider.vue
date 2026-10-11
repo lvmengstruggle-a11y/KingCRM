@@ -16,8 +16,8 @@
         "
         :class="`flex justify-center py-[14px] ${appStore.menuCollapsed ? 'px-[16px]' : 'px-[24px]'}`"
       >
-        <CrmSvg v-if="appStore.menuCollapsed" name="CORDYS" height="40px" width="40px" />
-        <CrmSvg v-else name="logo_CORDYS" height="28px" width="130px" />
+        <CrmSvg v-if="appStore.menuCollapsed" name="KingCRM" height="40px" width="40px" />
+        <CrmSvg v-else name="logo_kingcrm" height="28px" width="130px" />
       </div>
       <n-scrollbar content-style="min-height: 500px;height: 100%;width: 100%">
         <n-menu

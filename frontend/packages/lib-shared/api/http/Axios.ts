@@ -13,7 +13,7 @@ export * from './axiosTransform';
 /**
  * @description:  封装axios请求，返回重新封装的数据格式
  */
-export class CordysAxios {
+export class KingAxios {
   public axiosInstance: AxiosInstance;
 
   private readonly options: CreateAxiosOptions;

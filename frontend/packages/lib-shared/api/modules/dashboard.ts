@@ -29,9 +29,9 @@ import {
   dashboardUnCollectUrl,
   dashboardUpdateUrl,
 } from '../requrls/dashboard';
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 
-export default function useDashboardApi(CDR: CordysAxios) {
+export default function useDashboardApi(CDR: KingAxios) {
   // 重命名仪表板模块
   function dashboardModuleRename(data: DashboardModuleRenameParams) {
     return CDR.post({ url: dashboardModuleRenameUrl, data });

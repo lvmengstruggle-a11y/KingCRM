@@ -2,7 +2,7 @@ import type { ModuleField, TableQueryParams } from './common';
 import type { FormDesignConfigDetailParams } from '@lib/shared/models/system/module';
 import { ProcessStatusEnum } from '@lib/shared/enums/process';
 import type { CirculationTypeEnum, CirculationValueTypeEnum } from '@lib/shared/enums/opportunityEnum';
-import type { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+import type { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
 export interface OpportunityItem {
   id: string; // 商机ID

@@ -1,8 +1,8 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import { AddLicenseUrl, GetLicenseUrl } from '@lib/shared/api/requrls/system/authorizedManagement';
 import type { LicenseInfo } from '@lib/shared/models/system/authorizedManagement';
 
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   /**
    * 授权管理相关API
    */

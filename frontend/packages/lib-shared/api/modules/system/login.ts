@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   getKeyUrl,
   isLoginUrl,
@@ -13,7 +13,7 @@ import type { UserInfo } from '@lib/shared/models/user';
 import type { Result } from '@lib/shared/types/axios';
 import type { AxiosResponse } from 'axios';
 
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   // 登录
   function login(data: LoginParams) {
     return CDR.post<UserInfo>({ url: loginUrl, data });

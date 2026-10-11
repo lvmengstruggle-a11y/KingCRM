@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   AddProductPriceUrl,
   AddProductUrl,
@@ -49,7 +49,7 @@ import type {
 import type { FormDesignConfigDetailParams } from '@lib/shared/models/system/module';
 import { ValidateInfo } from '@lib/shared/models/system/org';
 
-export default function useProductApi(CDR: CordysAxios) {
+export default function useProductApi(CDR: KingAxios) {
   // 添加产品
   function addProduct(data: SaveProductParams) {
     return CDR.post({ url: AddProductUrl, data });

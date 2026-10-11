@@ -24,8 +24,8 @@
 
   import CrmDataSource from '@/components/business/crm-datasource/index.vue';
 
-  import { multipleValueTypeList } from '@cordys/web/src/components/business/crm-form-create/config';
-  import { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+  import { multipleValueTypeList } from '@kingcrm/web/src/components/business/crm-form-create/config';
+  import { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
   const props = defineProps<{
     fieldConfig: FormCreateField;

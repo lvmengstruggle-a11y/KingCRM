@@ -1,4 +1,4 @@
-import type { CordysAxios } from '@lib/shared/api/http/Axios';
+import type { KingAxios } from '@lib/shared/api/http/Axios';
 import {
   AddCustomFormUrl,
   GetCustomFormAdminUrl,
@@ -56,7 +56,7 @@ import type { SelectedUsersItem } from '@lib/shared/models/system/module';
 import type { DeptUserTreeNode } from '@lib/shared/models/system/role';
 import { ValidateInfo } from '@lib/shared/models/system/org';
 
-export default function useCustomFormApi(CDR: CordysAxios) {
+export default function useCustomFormApi(CDR: KingAxios) {
   function addCustomForm(data: CustomFormSaveRequest) {
     return CDR.post({ url: AddCustomFormUrl, data });
   }

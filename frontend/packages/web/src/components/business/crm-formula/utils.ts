@@ -2,7 +2,7 @@ import { IRNodeType } from '@lib/shared/enums/formula';
 
 import { resolveFieldId } from '../crm-formula-editor/utils';
 import { FieldTypeMap, FormulaDataSourceMap, IRNode, ValueType } from './formula-runtime/types';
-import { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+import { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
 export { formatFormulaResultValue } from '@lib/shared/method/formCreate';
 

@@ -29,7 +29,7 @@
   import { executeFormFormula } from './formula-runtime/formula-executor';
   import { getFormulaDisplayInfo } from './formula-runtime/formula-executor/formula-display';
   import { getFormulaResultFormatOptions } from './utils';
-  import type { FormCreateField, FormCreateFieldRule } from '@cordys/web/src/components/business/crm-form-create/types';
+  import type { FormCreateField, FormCreateFieldRule } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
   const { t } = useI18n();
   const { inputNumber, singleText } = basicComponents;

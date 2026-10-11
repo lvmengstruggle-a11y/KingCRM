@@ -29,8 +29,8 @@
   import { useI18n } from '@lib/shared/hooks/useI18n';
   import { getIndustryPath } from '@lib/shared/method';
 
-  import { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
-  import { industryOptions } from '@cordys/web/src/components/pure/crm-industry-select/config';
+  import { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
+  import { industryOptions } from '@kingcrm/web/src/components/pure/crm-industry-select/config';
   import type { CascaderOption } from 'vant';
 
   const props = defineProps<{

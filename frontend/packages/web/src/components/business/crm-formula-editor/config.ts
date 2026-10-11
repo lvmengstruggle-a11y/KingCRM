@@ -1,7 +1,7 @@
 import { FieldTypeEnum } from '@lib/shared/enums/formDesignEnum';
 import { useI18n } from '@lib/shared/hooks/useI18n';
 
-import type { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+import type { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
 const { t } = useI18n();
 

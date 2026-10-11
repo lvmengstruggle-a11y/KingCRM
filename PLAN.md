@@ -1,6 +1,6 @@
 # KingCRM Node.js 后端重写计划
 
-本目录是独立项目 KingCRM，工程目录 `KingCRM`。Java 项目在同级目录 `CordysCRMjava`，两边共用同一套 MySQL（库名 `cordys-crm`）。表结构继续由 Java 项目里已发布的 Flyway 脚本负责，Node 侧不新建库、不改那些脚本。
+本目录是独立项目 KingCRM，工程目录 `KingCRM`。Java 项目在同级目录，两边共用同一套 MySQL（库名 `kingcrm`）。表结构继续由 Java 项目里已发布的 Flyway 脚本负责，Node 侧不新建库、不改那些脚本。
 
 当前规模：98 个 Controller、约 804 个接口。一次替换不现实，按下面阶段替换，前端协议保持不变。
 
@@ -56,7 +56,7 @@ src/
 - Fastify 应用、统一响应、全局异常
 - `GET /health`
 - `GET /get-key`、`POST /login`、`GET /logout`、`GET /is-login`、`GET /get-auth`
-- 密码 MD5、默认密码标记（管理员默认 `CordysCRM`，员工为手机号后 6 位）
+- 密码 MD5、默认密码标记（管理员默认 `KingCRM`，员工为手机号后 6 位）
 - 组织、部门、角色、权限点写入会话
 - 登录日志 `sys_login_log`
 - `POST /locale-language/change`
@@ -188,7 +188,7 @@ src/
 ```bash
 cd KingCRM
 cp .env.example .env
-# 填入现有 MySQL 账号，库名 cordys-crm
+# 填入现有 MySQL 账号，库名 kingcrm
 npm install
 npm test
 npm run dev

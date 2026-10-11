@@ -1,6 +1,6 @@
 <template>
   <div class="flex h-full flex-col overflow-hidden bg-[var(--text-n10)]">
-    <van-nav-bar title="CORDYS AI" class="h-[48px]" fixed>
+    <van-nav-bar title="KingCRM AI" class="h-[48px]" fixed>
       <template #left>
         <div class="inline-flex items-center gap-[14px]">
           <CrmIcon name="iconview-list" width="24px" height="24px" @click="showHistory = true" />

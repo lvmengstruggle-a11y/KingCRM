@@ -10,7 +10,7 @@ import {
 import { RequestEnum } from '@lib/shared/enums/httpEnum';
 import type { SelectedUsersItem } from './module';
 import type { OptionDTO } from './business';
-import type { FilterForm } from '@cordys/web/src/components/pure/crm-advance-filter/type';
+import type { FilterForm } from '@kingcrm/web/src/components/pure/crm-advance-filter/type';
 import type { UserInfo } from '@lib/shared/models/user';
 import {
   ApprovalFieldPermissionModeEnum,
@@ -19,9 +19,9 @@ import {
   MultiApproverModeEnum,
   SameSubmitterActionEnum,
 } from '@lib/shared/enums/process';
-import type { ActionNode, ConditionBranch } from '@cordys/web/src/components/business/crm-flow/types';
+import type { ActionNode, ConditionBranch } from '@kingcrm/web/src/components/business/crm-flow/types';
 import type { TableQueryParams } from '../common';
-import type { AttachmentInfo } from '@cordys/web/src/components/business/crm-form-create/types';
+import type { AttachmentInfo } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
 export interface BaseItem {
   id: string;

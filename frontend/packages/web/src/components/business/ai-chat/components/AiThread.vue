@@ -28,7 +28,7 @@
             />
 
             <div class="w-full min-w-0">
-              <div class="mb-[8px] font-[600]"> CORDYS AI </div>
+              <div class="mb-[8px] font-[600]"> KingCRM AI </div>
               <AiLoadingBlock />
             </div>
           </article>

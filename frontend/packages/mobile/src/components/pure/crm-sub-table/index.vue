@@ -52,7 +52,7 @@
 
   import useUserStore from '@/store/modules/user';
 
-  import type { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+  import type { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
   const props = defineProps<{
     subFields: FormCreateField[];

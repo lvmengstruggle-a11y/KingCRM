@@ -19,7 +19,7 @@
 
   import CrmTextButton from '@/components/pure/crm-text-button/index.vue';
   import fileList from './fileList.vue';
-  import { AttachmentInfo } from '@cordys/web/src/components/business/crm-form-create/types';
+  import { AttachmentInfo } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
   const props = defineProps<{
     fileList: AttachmentInfo[];

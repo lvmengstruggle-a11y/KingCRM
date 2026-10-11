@@ -3,8 +3,8 @@ import { useI18n } from '@lib/shared/hooks/useI18n';
 import { getCityPath } from '@lib/shared/method';
 import type { ModuleField } from '@lib/shared/models/common';
 
-import { getFormConfigApiMap } from '@cordys/web/src/components/business/crm-form-create/config';
-import type { FormCreateField } from '@cordys/web/src/components/business/crm-form-create/types';
+import { getFormConfigApiMap } from '@kingcrm/web/src/components/business/crm-form-create/config';
+import type { FormCreateField } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
 export default async function useFormCreateTransform(formKey: FormDesignKeyEnum) {
   const { t } = useI18n();

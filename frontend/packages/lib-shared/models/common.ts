@@ -1,4 +1,4 @@
-import type { FilterResult } from '@cordys/web/src/components/pure/crm-advance-filter/type';
+import type { FilterResult } from '@kingcrm/web/src/components/pure/crm-advance-filter/type';
 import { ColumnTypeEnum, OperatorEnum } from '@lib/shared/enums/commonEnum';
 
 // 请求返回结构

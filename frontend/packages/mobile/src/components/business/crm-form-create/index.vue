@@ -57,8 +57,8 @@
   import useFormCreateApi from '@/hooks/useFormCreateApi';
   import useUserStore from '@/store/modules/user';
 
-  import { rules } from '@cordys/web/src/components/business/crm-form-create/config';
-  import { FormCreateField, FormCreateFieldRule } from '@cordys/web/src/components/business/crm-form-create/types';
+  import { rules } from '@kingcrm/web/src/components/business/crm-form-create/config';
+  import { FormCreateField, FormCreateFieldRule } from '@kingcrm/web/src/components/business/crm-form-create/types';
 
   const route = useRoute();
   const router = useRouter();

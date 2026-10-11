@@ -106,16 +106,16 @@
 pnpm --dir frontend install --frozen-lockfile
 
 # 启动开发服务
-pnpm --dir frontend --filter @cordys/web dev
-pnpm --dir frontend --filter @cordys/mobile dev
+pnpm --dir frontend --filter @kingcrm/web dev
+pnpm --dir frontend --filter @kingcrm/mobile dev
 
 # 类型检查
-pnpm --dir frontend --filter @cordys/web type:check
-pnpm --dir frontend --filter @cordys/mobile type:check
+pnpm --dir frontend --filter @kingcrm/web type:check
+pnpm --dir frontend --filter @kingcrm/mobile type:check
 
 # 代码与样式检查；命令可能自动修改文件
-pnpm --dir frontend --filter @cordys/web lint
-pnpm --dir frontend --filter @cordys/web lint:styles
+pnpm --dir frontend --filter @kingcrm/web lint
+pnpm --dir frontend --filter @kingcrm/web lint:styles
 
 # 构建全部工作区
 pnpm --dir frontend build
