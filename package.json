@@ -1,0 +1,28 @@
+{
+  "name": "@cordys/backend-node",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cordys CRM backend rewritten with Node.js and TypeScript",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test src/app.test.ts src/models/record.model.test.ts src/support/coding.test.ts src/support/rsa.test.ts src/support/smtp.test.ts src/support/tree.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "fastify": "^5.6.1",
+    "mysql2": "^3.15.2",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

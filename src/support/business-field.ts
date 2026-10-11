@@ -1,0 +1,100 @@
+/** field.json 的 internalKey 对应主表字段，和 Java BusinessModuleField 一致。 */
+export const BUSINESS_FIELDS: Record<string, { businessKey: string; disabledProps: string[] }> = {
+  customerName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  customerOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  clueName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  clueOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  clueContactName: { businessKey: 'contact', disabledProps: [] },
+  clueContactPhone: { businessKey: 'phone', disabledProps: [] },
+  clueProduct: { businessKey: 'products', disabledProps: [] },
+  contactCustomer: { businessKey: 'customerId', disabledProps: [] },
+  contactOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contactName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contactPhone: { businessKey: 'phone', disabledProps: [] },
+  opportunityName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  opportunityCustomer: { businessKey: 'customerId', disabledProps: [] },
+  opportunityPrice: { businessKey: 'amount', disabledProps: [] },
+  opportunityWinRate: { businessKey: 'possible', disabledProps: [] },
+  opportunityEndTime: { businessKey: 'expectedEndTime', disabledProps: [] },
+  opportunityProduct: { businessKey: 'products', disabledProps: [] },
+  opportunityContact: { businessKey: 'contactId', disabledProps: [] },
+  opportunityOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  recordType: { businessKey: 'type', disabledProps: ['options', 'rules.required', 'mobile', 'readable'] },
+  recordCustomer: { businessKey: 'customerId', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  recordOpportunity: { businessKey: 'opportunityId', disabledProps: [] },
+  recordClue: { businessKey: 'clueId', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  recordOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  recordContact: { businessKey: 'contactId', disabledProps: [] },
+  recordDescription: { businessKey: 'content', disabledProps: [] },
+  recordTime: { businessKey: 'followTime', disabledProps: [] },
+  recordMethod: { businessKey: 'followMethod', disabledProps: [] },
+  planType: { businessKey: 'type', disabledProps: ['options', 'rules.required', 'mobile', 'readable'] },
+  planCustomer: { businessKey: 'customerId', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  planOpportunity: { businessKey: 'opportunityId', disabledProps: [] },
+  planClue: { businessKey: 'clueId', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  planOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  planContact: { businessKey: 'contactId', disabledProps: [] },
+  planStartTime: { businessKey: 'estimatedTime', disabledProps: [] },
+  planContent: { businessKey: 'content', disabledProps: [] },
+  planMethod: { businessKey: 'method', disabledProps: [] },
+  productName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  productPrice: { businessKey: 'price', disabledProps: [] },
+  productStatus: { businessKey: 'status', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  priceName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  priceStatus: { businessKey: 'status', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  priceProducts: { businessKey: 'products', disabledProps: ['mobile', 'readable'] },
+  priceProduct: { businessKey: 'product', disabledProps: ['rules.required', 'mobile', 'dataSourceType', 'readable'] },
+  priceProductAmount: { businessKey: 'amount', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  quotationName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  quotationOpportunity: { businessKey: 'opportunityId', disabledProps: ['rules.required', 'mobile', 'dataSourceType', 'readable'] },
+  quotationUntilTime: { businessKey: 'untilTime', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  quotationTotalAmount: { businessKey: 'amount', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contractPaymentPlanOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contractPaymentPlanContract: { businessKey: 'contractId', disabledProps: ['rules.required', 'dataSourceType', 'mobile', 'readable'] },
+  contractPaymentPlanPlanAmount: { businessKey: 'planAmount', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contractPaymentPlanPlanEndTime: { businessKey: 'planEndTime', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contractPaymentPlanName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contractName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contractCustomer: { businessKey: 'customerId', disabledProps: ['rules.required', 'mobile', 'readable', 'dataSourceType'] },
+  contractOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contractNo: { businessKey: 'number', disabledProps: ['rules.required'] },
+  contractStartTime: { businessKey: 'startTime', disabledProps: ['mobile', 'readable'] },
+  contractEndTime: { businessKey: 'endTime', disabledProps: ['mobile', 'readable'] },
+  contractTotalAmount: { businessKey: 'amount', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  invoiceName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  invoiceOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  invoiceAmount: { businessKey: 'amount', disabledProps: [] },
+  invoiceContract: { businessKey: 'contractId', disabledProps: ['rules.required', 'mobile', 'readable', 'dataSourceType'] },
+  invoiceType: { businessKey: 'invoiceType', disabledProps: ['rules.required', 'readable', 'mobile'] },
+  invoiceTaxRate: { businessKey: 'taxRate', disabledProps: [] },
+  invoiceBusinessTitle: { businessKey: 'businessTitleId', disabledProps: ['rules.required', 'mobile', 'readable', 'dataSourceType'] },
+  contractPaymentRecordNo: { businessKey: 'no', disabledProps: ['rules.required'] },
+  contractPaymentRecordName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contractPaymentRecordOwner: { businessKey: 'owner', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contractPaymentRecordContract: { businessKey: 'contractId', disabledProps: ['rules.required', 'dataSourceType', 'mobile', 'readable'] },
+  contractPaymentRecordPlan: { businessKey: 'paymentPlanId', disabledProps: ['dataSourceType', 'mobile'] },
+  contractPaymentRecordAmount: { businessKey: 'recordAmount', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  contractPaymentRecordEndTime: { businessKey: 'recordEndTime', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  orderName: { businessKey: 'name', disabledProps: ['rules.required', 'mobile', 'readable'] },
+  orderCustomer: { businessKey: 'customerId', disabledProps: ['dataSourceType'] },
+  orderContract: { businessKey: 'contractId', disabledProps: ['dataSourceType'] },
+  orderOwner: { businessKey: 'owner', disabledProps: [] },
+  orderNo: { businessKey: 'number', disabledProps: ['rules.required'] },
+  orderAmount: { businessKey: 'amount', disabledProps: ['rules.required', 'mobile', 'readable'] },
+};
+
+export function applyBusinessField(field: Record<string, unknown>): void {
+  const internalKey = typeof field.internalKey === 'string' ? field.internalKey : '';
+  const business = BUSINESS_FIELDS[internalKey];
+  if (business) {
+    field.businessKey = business.businessKey;
+    field.disabledProps = business.disabledProps;
+  }
+  if (Array.isArray(field.subFields)) {
+    for (const subField of field.subFields) {
+      if (subField && typeof subField === 'object') {
+        applyBusinessField(subField as Record<string, unknown>);
+      }
+    }
+  }
+}
